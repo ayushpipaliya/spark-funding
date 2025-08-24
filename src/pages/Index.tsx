@@ -1,12 +1,19 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import Hero from "@/components/home/Hero";
+import FeaturedCampaigns from "@/components/home/FeaturedCampaigns";
+import HowItWorks from "@/components/home/HowItWorks";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Navbar />
+      <main>
+        <Hero />
+        <FeaturedCampaigns />
+        <HowItWorks />
+      </main>
+      <Footer />
     </div>
   );
 };
